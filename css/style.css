@@ -179,11 +179,29 @@ first div in the grid  and place it in the grid. */
     grid-area: auto / 1 / span 1 / span 5;
     background-image: url(../images/header.jpg);
   }
-  .about, .clients, .method-image, .contact-image {
-    grid-column: 3 / span 2;
+  .about {
+    grid-area: 2 / 3 / span 1 / span 2;
   }
-  .about-image, .clients-image, .method, .contact {
-    grid-column: 2 / span 2;
+  .method {
+    grid-area: 3 / 2 / span 1 / span 2;
+  }
+  .clients {
+    grid-area: 4 / 3 / span 1 / span 2;
+  }
+  .contact {
+    grid-area: 5 / 2 / span 1 / span 2;
+  }
+  .about-image {
+    grid-area: 2 / 2 / span 1 / span 2;
+  }
+  .method-image {
+    grid-area: 3 / 3 / span 1 / span 2;
+  }
+  .clients-image {
+    grid-area: 4 / 2 / span 1 / span 2;
+  }
+  .contact-image {
+    grid-area: 5 / 3 / span 1 / span 2;
   }
   /* Step 13:Write the selector/rule property to update the .text-block class */
   .text-block {
